@@ -8,4 +8,7 @@ class Livro(ib):
         self.__num_paginas = num_paginas
 
     def exibir_detalhes(self):
-        print(f"Livro -> Código: {self.__codigo} | Título: {self.__titulo} | Ano: {self.__ano} \nAutor: {self.__autor} | Número de paginas: {self.__num_paginas} | Disponível: {self.__disponivel}")
+        print("Livro")
+        super().exibir_detalhes()
+        print(f"Livro Autor: {self.__autor} | Número de paginas: {self.__num_paginas}")
+              
